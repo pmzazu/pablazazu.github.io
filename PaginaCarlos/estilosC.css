@@ -1,0 +1,170 @@
+:root{
+	--color_negro: #000;
+	--color_blanco: #fff;
+	--color_grisoscuro: #646663;
+	--color_grisclaro: #B3B4B2;
+	--color_violeta: #472B9D;
+	--color_rojo: #AA200A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* default document font size = 16px, 1rem = 16px, 100% = 16px
+  * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.8rem;
+	font-weight: 400;
+	background-color: var(--color_grisoscuro);
+	color: var(--color_blanco);
+	}
+/*Navegador*/
+
+.navbar-brand {
+	font-size: 5rem;
+}
+
+div > ul{
+	font-size: 3rem;
+}
+
+div > ul:hover{
+	font-size: 3rem;
+}
+
+div > ul > li {
+	display: block;
+}
+
+div > ul > li:hover {
+		background-color: var(--color_rojo);
+		font-size: 3rem;
+
+}
+
+
+/*INDEXC.HTML*/
+/*titulo*/
+#nombre {
+	font-size: 4.5rem;
+	color: var(--color_rojo);
+	text-align: center;
+	margin: 20px;
+	line-height: 2em;
+	text-shadow: 1px 1px 2px var(--color_negro); 
+}
+
+/*imagenes*/
+
+#guitarravivo, #lacupula {
+	border: var(--color_negro) 50px solid;
+
+	display: block;
+  	margin: auto;
+}
+
+/*textos entre imagenes*/
+
+p{
+	text-align: center;
+	display: inline-block;
+	margin: 30px;
+	line-height: 1.5em;
+}
+
+/*pie de pagina*/
+
+#pie {
+	margin: 20px;
+}
+
+/*CLASES:HTML*/
+
+/*imagen*/
+#bannerclases {
+	width: 100%;
+	height: 35em;
+}
+
+/*titulos*/
+h1 {
+	font-size: 4.5rem;
+	color: var(--color_rojo);
+	text-align: center;
+	margin-left: : 2rem;
+	line-height: 2em;
+	text-shadow: 1px 1px 2px var(--color_negro); 
+}
+
+h2 {
+	font-size: 3.5rem;
+	line-height: 3rem;
+	padding: 2rem; 
+	background-color: var(--color_negro);
+}
+
+/*listas*/
+
+ul {
+	font-size: 3.5rem;
+	margin-left: 4rem;
+	padding: 1rem;
+	list-style-type: none;
+}
+
+li:hover {
+	font-size: 3.8rem;
+	cursor: default;
+}
+
+/*CONTACTO*/
+
+iframe {
+	display: block;
+	margin: auto;
+	padding: 5rem;
+}
+
+/*redes*/
+
+#grillacontacto {
+	
+}
+
+a > img {
+	
+	align-items: center;
+	 width:15rem;
+    height:15rem;
+    float:left;
+
+}
+
+div > a {
+	text-shadow: 1px 1px 2px var(--color_negro); 
+	  color: var(--color_rojo);
+	 width:15rem;
+    height:15rem;
+    float:left;
+    margin:10px 10px 0 0;
+
+}	
+
+
+div > a:hover {
+	
+	color: var(--color_negro);
+}
+
+#bandcampImagen, #psbandcampImagen, #instagramImagen {
+	margin: 5rem 15rem 5rem;
+}
