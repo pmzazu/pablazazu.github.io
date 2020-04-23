@@ -1,320 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pagina Personal Pabla Zazú</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		:root{
-	--color-Green: #61FF50;
-	--color-Purple: #161748;
-	--color-Pink : #f95d9b;
-	--color-Bluewater: #FF7F50;
-	--color-Black: #000;
-	--color-White:#fff;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Chivo&display=swap');
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Chivo', sans-serif;
-  font-size: 1.8rem; /* 18px */
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--color-White);
-}
-
-h1,
-h2 {
-  font-family: 'Chivo', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-White);
-}
-img {
-  display: block;
-  width: 100%;
-}
-
-/* nav */
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--color-Pink);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
-.nav-list {
-  display: flex;
-  margin-right: 2rem;
-}
-
-
-.nav-list a {
-  display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
-}
-
-.nav-list a:hover {
-  background-color: var(--color-Bluewater);
-}
-
-
-#welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color-Purple);
-  background-image: linear-gradient(62deg, var(--color-Black)  0%, var(--color-Purple) 100%);
-}
-
-#welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--color-Pink);
-}
-
-.projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--color-Bluewater);
-}
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--colorWhite);
-}
-
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-
-.project {
-  background: var(--color-Purple);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
-
-.code {
-  color: var(--color-Purple);
-  transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: var(--color-Green);
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--color-Green);
-}
-
-.contact-section-header > h2 {
-  font-size: 6rem;
-}
-
-
-.contact-section-header > p {
-  font-style: italic;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
-
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: var(--color-Green);
-  border-top: 4px solid var(--color-Pink);
-}
-
-footer > p {
-  margin: 2rem;
-}
-
-footer i {
-  vertical-align: middle;
-}
-
-	</style>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+  <title> Pabla Martin Zazu, pagina personal</title>
 </head>
-
-<!--navegador-->
+<!-- START NAV -->
 
 <nav id="navbar" class="nav">
   <ul class="nav-list">
     <li>
-      <a href="#welcome-section">Info</a>
+      <a href="#welcome-section">Sobre mí</a>
     </li>
     <li>
-      <a href="#projects">Trabajos</a>
+      <a href="#projects">Proyectos</a>
     </li>
     <li>
       <a href="#contact">Contacto</a>
     </li>
   </ul>
 </nav>
-<!-- fin-->
+<!-- end-->
 <!-- START WELCOME SECTION-->
 
 <section id="welcome-section">
-	<H1>Hola! mi nombre es Pabla</H1>
-	<p>Aquí encuentras mis trabajos como desarrolladora web.</p>
+	<h1>Hola! Mi nombre es Pabla</h1>
+    <p>Soy desarrolladora web trainee, y estos son mis proyectos.</p>
+    <a href="../files/CVPablaZazu2020.pdf" download="CVPablaZazu2020" id="download-button">Descargar CV</a>
 </section>
 <!--end-->
 <!-- START PROJECT SECTION-->
 
-  	<section id="projects" class="projects-section">
-  <h2 class="projects-section-header">Estos son algunos de mis proyectos...</h2>
+<section id="projects" class="projects-section">
+    <h2 class="projects-section-header">Estos son algunos de mis proyectos</h2>
 
-  <div class="projects-grid">
-    <a
-      href="https://codepen.io/pmzazu/full/NWPQXvQ"
-      target="_blank"
-      class="project project-tile"
-    >
-      <img
-        class="project-image"
-        src="imagen/logo pc (2).jpg"
-        alt="project"
-      />
-      <p class="project-title">
-        <span class="code">&lt;</span>
-        Pagina de Producto
-        <span class="code">&#47;&gt;</span>
-      </p>
-    </a>
-
-  <a
-    href="https://codepen.io/pmzazu/"
-    class="project project-tile"
-    target="_blank"
-    >
-    <img
-    class="project-image"
-    src="https://www.iconsdb.com/icons/preview/barbie-pink/plus-2-xxl.png" alt="plus sign">
-    <p class="project-title"><span class="code">&lt;</span>
-    Show all<span class="code">&#47;&gt;</span>
-      </p></a>
-
+    <div class="projects-grid">
+        <div class="projects-grid-container">  
+        <a href="https://pmzazu.github.io/princesaCerdita/index.html" target="_blank"class="project project-tile">
+            <img class="project-image" src="../imagenes/logo pc (2).jpg" alt="logo de la pagina de producto"/>
+            <p class="project-title">Página de producto</p>
+        </a>
+        </div>
+        <div class="project-grid-container">
+        <a href="https://pmzazu.github.io/PaginaCarlos/index.html" class="project project-tile" target="_blank">
+            <img class="project-image"
+                src="https://github.com/pmzazu/pmzazu.github.io/blob/master/PaginaCarlos/img/carlostocando.jpg?raw=true" alt="plus sign">
+            <p class="project-title">Página Profesional</p>
+        </a>
+        </div>
+    </div>
 
 </section>
 
 <!-- START CONTACT SECTION -->
 
 <section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2>¿Trabajamos juntxs?</h2>
-    <p>¡Podemos crear grandes cosas!</p>
-  </div>
-  <div class="contact-links">
-    <a
-      href="https://www.facebook.com/profile.php?id=100013392513934"
-      target="_blank"
-      class="btn contact-details"
-      > Facebook</a
-    >
-    <a
-      id="profile-link"
-      href="https://github.com/pmzazu"
-      target="_blank"
-      class="btn contact-details"
-      > GitHub</a>
-    <a href="mailto:example@example.com" class="btn contact-details"
-      >mail</a>
-    <a href="tel:555-555-5555" class="btn contact-details">Llamame</a
-    >
-  </div>
+    <div class="contact-section-header">
+        <h2>¡Trabajemos en equipo!</h2>
+        <p>Podemos crear grandes cosas, y volver la web un lugar más accesible</p>
+    </div>
+    <div class="contact-links">
+        <a href="https://facebook.com/freecodecamp"
+           target="_blank"
+           class="btn contact-details"> Facebook
+        </a>
+        <a id="profile-link"
+          href="https://github.com/pmzazu"
+          target="_blank"
+          class="btn contact-details"> GitHub
+        </a>
+        <a href="mailto:example@example.com" class="btn contact-details"> Mail
+        </a>
+    </div>
 </section>
 
 <!-- END CONTACT SECTION -->
 
+<!-- START FOOTER SECTION -->
+
+<footer>
+  
+  <p>
+    &copy Pabla Martin Zazu, 2020
+  </p>
+</footer>
+
+<!-- END FOOTER SECTION -->
 </html>
