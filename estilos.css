@@ -1,0 +1,204 @@
+/*responsive*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+
+html{
+	 scroll-behavior: smooth;
+}
+body{	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header{
+	
+	background-image: url(minh-pham-IisDPFNUS4k-unsplash.jpg);
+	background-image: no-repeat;
+	background-image: fixed;
+	background-image: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh; /*viewportheight*/
+	margin: 0;
+	margin-bottom: 9rem;
+	
+}
+
+header p{
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	margin-left: 2rem;
+}
+
+ul{
+	display: flex;
+}
+
+li{
+	list-style: none;
+	margin-right: 1.38rem;
+	font-size: 1.3rem;
+}
+
+ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+ul li a:hover{
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 5px #8D623E;
+}
+
+h1{
+	font-size: 3.33rem;
+	margin: 0;
+}
+
+.menu{
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+}
+
+.cuerpo{
+	text-align: center;
+	padding: 14rem;
+}
+
+#main-content{
+	max-width: 1280px;
+	width: 80%;
+	margin: auto;
+}
+ .texto-cuerpo{
+ 	font-size: 1.38rem;
+ }
+
+.button{
+	padding: 1.5rem;
+	background-color: rgba(141, 98, 62, 0.57);
+	border-style: solid;
+	border-radius: 30px;
+	border-color: rgba( 141, 98, 62,1);
+	border-width: 2px;
+	text-decoration: none;
+	color: black;
+	box-shadow: 2px 2px 5px #666;   
+
+}
+
+.button:click{
+	box-shadow: none;
+}
+
+.button:hover{
+	border-width: 3px;
+}
+
+
+
+/*seccion sobre mi*/
+
+section{
+	background-color: white;
+}
+
+h2{
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: normal;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	padding-top: 0;
+}
+
+.contenedor-sobremi{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.texto-sobremi{
+	width: 42%;
+	size: 1.3rem;
+}
+
+.texto-sobremi a{
+	display: inline-block;
+	margin-top: 1.2rem;
+	margin-left: 2rem; 
+}
+
+
+
+/*mis trabajos*/
+
+.contenedor-trabajos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.contenedor-trabajos a {
+	margin-bottom: 2rem;
+}
+
+.contenedor-trabajos a:hover{
+	border-style: solid;
+	border-color: grey;
+
+}
+
+#mistrabajos{
+	margin-top: 3rem;
+}
+
+/*footer*/
+
+#contenedor-contacto{
+	display: flex;
+	
+	padding: 3rem;
+	justify-content: center;
+	align-content: space-around;
+	background: linear-gradient(to bottom, white, #CFB997);
+}
+
+footer {
+	margin-top: 3rem;
+}
+
+footer h2 {
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+	color: #602F1E;
+	font-weight: 2px;
+	padding-bottom: 0.2rem;
+}
+footer a {
+	align-content: space-around;
+	padding: 1rem;
+}
