@@ -125,7 +125,10 @@ h1{
   	background: linear-gradient(to bottom, #CFB997, white); 
   }
   h1{
-  	font-size: 3rem;
+  	font-size: 2.5rem;
+  }
+  .cuerpo{
+  	padding: 10rem;
   }
   .texto-cuerpo{
   	text-align: left;
@@ -134,6 +137,7 @@ h1{
   }
   button {
   	padding: 0.5rem;
+  	background-size: 50%
   }
 }
 
@@ -206,14 +210,19 @@ h2{
 
 @media (max-width: 28.75em) {
 
-	div img{
+	.contenedor-sobremi img{
 		width: 40%;
 		height: auto;
 	}
-
+	.contenedor-trabajos {
+		padding: 2rem;
+	}
 	.contenedor-trabajos a {
-		width: 50%;
+		padding-left: 4rem;
+		padding-right: 0;
+		width: 70%;
 		height: auto;
+		
 	}
 }
 
@@ -232,13 +241,7 @@ footer {
 	margin-top: 3rem;
 }
 
-footer h2 {
-	font-size: 2rem;
-	margin-bottom: 0.5rem;
-	color: #602F1E;
-	font-weight: 2px;
-	padding-bottom: 0.2rem;
-}
+
 footer a {
 	align-content: space-around;
 	padding: 1rem;
