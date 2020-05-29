@@ -1,27 +1,3 @@
-/*responsive*/
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-
 
 html{
 	 scroll-behavior: smooth;
@@ -118,6 +94,49 @@ h1{
 	border-width: 3px;
 }
 
+/*responsive*/
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+  nav {
+  	background-color: #CFB997;
+  	width: 100vw;
+  	display: inline;
+  }
+  header {
+  	background-image: none;
+  	background: linear-gradient(to bottom, #CFB997, white); 
+  }
+  h1{
+  	font-size: 3rem;
+  }
+  .texto-cuerpo{
+  	text-align: left;
+  	font-size: 1.5rem;
+  	margin-bottom: 5rem;
+  }
+  button {
+  	padding: 0.5rem;
+  }
+}
+
 
 
 /*seccion sobre mi*/
@@ -176,6 +195,28 @@ h2{
 	margin-top: 3rem;
 }
 
+/*responsive*/
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+	div img{
+		width: 75%;
+		height: auto;
+	}
+}
+
+@media (max-width: 28.75em) {
+
+	div img{
+		width: 40%;
+		height: auto;
+	}
+
+	.contenedor-trabajos a {
+		width: 50%;
+		height: auto;
+	}
+}
+
 /*footer*/
 
 #contenedor-contacto{
@@ -202,3 +243,10 @@ footer a {
 	align-content: space-around;
 	padding: 1rem;
 }
+
+/*responsive*/
+
+@media (max-width: 28.75em) {
+	footer h2{
+		font-size: 1.5rem;
+	}
